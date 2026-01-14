@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.FechaActual = DateTime.Now;
         return View();
     }
 

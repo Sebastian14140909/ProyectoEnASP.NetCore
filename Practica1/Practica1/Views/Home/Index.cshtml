@@ -1,9 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Sebastian Rodriguez Arce</h1>
-    <h1 class="display-4">Manrique Torres Castillo</h1>
+<div class="container text-center">
+    <h1 class="mt-5">Programacion Avanzada en Web</h1>
 
+    <h3 class="mt-4">Integrantes</h3>
+
+    <ul class="list-group mt-3">
+        <li class="list-group-item">Sebastián Rodriguez Arce</li>
+        <li class="list-group-item">Manrique Torres Castillo</li>
+    </ul>
+
+    <p class="mt-4">
+        fecha del sistema:
+        <strong>@ViewBag.FechaActual.ToString("dd/MM/yyyy")</strong>
+    </p>
 </div>
